@@ -44,7 +44,7 @@ function sortearAmigo(){
 
     let resultado1 = amigos[indiceAleat];
 
-    document.getElementById('resultado').innerHTML = ` <h2> El nombre sorteado es: ${resultado1} `;
+    document.getElementById('resultado').innerHTML = ` <h2> El nombre sorteado es: ${resultado1} </h2> `;
     document.getElementById('listaAmigos').innerHTML = "";
 
 }
