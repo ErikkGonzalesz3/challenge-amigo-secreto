@@ -2,6 +2,7 @@
 let amigos = []; 
 let nombres;
 
+
 function add(){
     nombres = document.getElementById('amigo1').value;
 
@@ -29,5 +30,22 @@ function actualizarLista(){
 
     }
 
+}
+
+function sortearAmigo(){
+
+    if (amigos.length === 0){
+
+        alert("No ingresó ningun nombre para sortear ");
+        return;
+    }
+
+    let indiceAleat = Math.floor(Math.random()*amigos.length);
+
+    let resultado1 = amigos[indiceAleat];
+
+    document.getElementById('resultado').innerHTML = ` <h2> El nombre sorteado es: ${resultado1} `;
+
+    document.getElementById('listaAmigos').innerHTML = "";
 
 }
